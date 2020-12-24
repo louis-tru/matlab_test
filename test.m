@@ -1,10 +1,13 @@
+clear;
+clc;
 
 M = 4
-X = round(rand(M) * 100) / 100   %产生随机矩阵
-A = zeros(M);
+N = 4
+X = round(rand(M, N) * 100) / 100   %产生随机矩阵
+A = zeros(M, N);
 
 for i = 0: M - 1
-	for j = 0: M - 1
+	for j = 0: N - 1
 		if i == 0
 			a = sqrt(1 / M);
 		else
